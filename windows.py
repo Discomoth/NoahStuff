@@ -49,6 +49,6 @@ class FuckYouWindow(QtWidgets.QDialog):
                 text_string = f"You are an extraordiary example of a {rword.word(include_categories=['adjectives'])} {rword.word(include_categories=['nouns'])}"
                 self.text_fuckyou.appendPlainText(text_string)
             elif random_no == 3:
-                fucking_random_swear = self.fucking_profane_words[random.randint(0, len(self.fucking_profane_words))]
+                fucking_random_swear = self.fucking_profane_words[random.randint(0, len(self.fucking_profane_words))].strip()
                 text_string = f"You {fucking_random_swear}" 
                 self.text_fuckyou.appendPlainText(text_string)
